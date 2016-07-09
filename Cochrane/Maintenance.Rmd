@@ -1,0 +1,20 @@
+---
+title: "Maintenance"
+author: "Bruce Cochrane"
+date: "July 9, 2016"
+output: html_document
+---
+
+```{r}
+library(git2r)
+repo <- repository()
+```
+
+See if we are on master and all is good
+
+```{r}
+
+checkout(repo,"master")
+repo
+```
+
